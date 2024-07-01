@@ -22,9 +22,8 @@ export const SystemIcons = {
               <div
                 style={{
                   display: 'flex',
-                  flexDirection: 'column',
                   gap: '0.5rem',
-                  alignItems: 'center',
+                  justifyContent: 'center',
                 }}
               >
                 <SystemIcon icon={icons[iconName]} size="2rem" />
