@@ -1,0 +1,11 @@
+{
+  "name": "@workday/canvas-assets-tokens",
+  "version": "0.0.0",
+  "description": "Canvas design icons",
+  "author": "Workday, Inc. (https://www.workday.com)",
+  "license": "CC-BY-ND-4.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "private": true
+}

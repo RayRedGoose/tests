@@ -1,0 +1,31 @@
+{
+  "name": "@workday/canvas-assets-docs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "packages/canvas-assets-docs/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "docs/storybook/@workday/canvas-assets-docs",
+        "configDir": "packages/canvas-assets-docs/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  }
+}
